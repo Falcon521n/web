@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Modificar usuario</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <header>
+        <h1>Modificar usuario</h1>
+        <nav>
+            <a href="index.html">Inicio</a> |
+            <a href="Registro.html">Registrar usuario</a> |
+            <a href="Login.html">Iniciar sesión</a> |
+            <a href="Eliminar.html">Eliminar usuario</a>
+        </nav>
+    </header>
+
+    <main>
+        <form action="../PHP/update.php" method="post" onsubmit="return validarFormulario();">
+            <fieldset>
+                <legend>Actualizar datos</legend>
+
+                <label for="usuarioEdit">Usuario actual:</label>
+                <input id="usuarioEdit" type="text" name="usuario" placeholder="Usuario a actualizar" required>
+
+                <label for="correoEdit">Correo nuevo:</label>
+                <input id="correoEdit" type="email" name="correo" placeholder="correo@ejemplo.com" required>
+
+                <label for="passwordEdit">Nueva contraseña:</label>
+                <input id="passwordEdit" type="password" name="password" placeholder="Deja en blanco para no cambiarla">
+
+                <label for="confirmPasswordEdit">Confirmar nueva contraseña:</label>
+                <input id="confirmPasswordEdit" type="password" name="confirm_password" placeholder="Repetir nueva contraseña">
+
+                <div style="margin-top: 15px;">
+                    <input type="submit" value="Modificar usuario">
+                    <input type="reset" value="Limpiar">
+                </div>
+            </fieldset>
+        </form>
+    </main>
+</body>
+</html>

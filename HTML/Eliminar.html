@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Eliminar usuario</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <header>
+        <h1>Eliminar usuario</h1>
+        <nav>
+            <a href="index.html">Inicio</a> |
+            <a href="Registro.html">Registrar usuario</a> |
+            <a href="Login.html">Iniciar sesión</a> |
+            <a href="Editar.html">Modificar usuario</a>
+        </nav>
+    </header>
+
+    <main>
+        <form action="../PHP/delete.php" method="post" onsubmit="return confirmarEliminacion();">
+            <fieldset>
+                <legend>Eliminar cuenta</legend>
+
+                <label for="usuarioDelete">Usuario a eliminar:</label>
+                <input id="usuarioDelete" type="text" name="usuario" placeholder="Escribe el usuario" required>
+
+                <div style="margin-top: 15px;">
+                    <input type="submit" value="Eliminar usuario">
+                    <input type="reset" value="Limpiar">
+                </div>
+            </fieldset>
+        </form>
+    </main>
+</body>
+</html>

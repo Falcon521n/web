@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Contacto</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+<header>
+    <h1>Formulario de Contacto</h1>
+    <nav>
+        <a href="index.html">Inicio</a> |
+        <a href="Autobiografia.html">Autobiografía</a> |
+        <a href="Galeria.html">Galería</a>
+    </nav>
+</header>
+
+<section>
+    <form action="#" method="post" onsubmit="return validarFormulario()">
+        <!-- Cajas de texto -->
+        <fieldset>
+            <legend>Datos personales</legend>
+            <label for="nombre">Nombre:</label>
+            <input id="nombre" type="text" name="nombre"><br><br>
+
+            <label for="apellidos">Apellidos:</label>
+            <input id="apellidos" type="text" name="apellidos">
+        </fieldset>
+
+        <!-- Radio buttons -->
+        <fieldset>
+            <legend>Género</legend>
+            <input type="radio" name="genero" value="Masculino"> Masculino
+            <input type="radio" name="genero" value="Femenino"> Femenino
+        </fieldset>
+
+        <!-- Checkboxes -->
+        <fieldset>
+            <legend>Intereses</legend>
+            <input type="checkbox" name="deporte" value="Deportes"> Hacer Deporte
+            <input type="checkbox" name="tv" value="Televisión"> Ver Televisión
+            <input type="checkbox" name="ejercicio" value="Ejercicio"> Hacer Ejercicio
+        </fieldset>
+
+        <!-- Select -->
+        <fieldset>
+            <legend>Estudios actuales</legend>
+            <select name="estudios">
+                <option value="secundaria">Secundaria</option>
+                <option value="bachillerato">Bachillerato</option>
+                <option value="licenciatura">Licenciatura</option>
+            </select>
+        </fieldset>
+
+        <!-- Lista desplegable -->
+        <fieldset>
+            <legend>Navegador usado</legend>
+            <label>Selecciona tu navegador:
+                <input list="buscadores" name="navegador">
+            </label>
+            <datalist id="buscadores">
+                <option value="Chrome">
+                <option value="Firefox">
+                <option value="Internet Explorer">
+                <option value="Opera">
+                <option value="Safari">
+                <option value="Microsoft Edge">
+            </datalist>
+        </fieldset>
+
+        <!-- Botones -->
+        <input type="submit" value="Enviar">
+        <input type="reset" value="Borrar">
+    </form>
+</section>
+
+<section>
+    <!-- Mapa con tu ubicación -->
+    <h2>Mi ubicación</h2>
+    <iframe src="https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d1175.1893238695195!2d-88.1418150024642!3d21.141848418436343!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2s!5e1!3m2!1ses-419!2smx!4v1791433436487!5m2!1ses-419!2smx" 
+        width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" 
+        referrerpolicy="strict-origin-when-cross-origin">
+    </iframe>
+</section>
+
+<footer>
+    <p><a href="index.html">Volver al inicio</a></p>
+</footer>
+</body>
+</html>
+
+
+

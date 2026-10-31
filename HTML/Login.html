@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Iniciar sesión</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <header>
+        <h1>Iniciar sesión</h1>
+        <nav>
+            <a href="index.html">Inicio</a> |
+            <a href="Registro.html">Registrar usuario</a> |
+            <a href="Editar.html">Modificar usuario</a> |
+            <a href="Eliminar.html">Eliminar usuario</a>
+        </nav>
+    </header>
+
+    <main>
+        <form action="../PHP/login.php" method="post" onsubmit="return validarLoginFormulario();">
+            <fieldset>
+                <legend>Acceso al sistema</legend>
+
+                <label for="usuarioLogin">Usuario:</label>
+                <input id="usuarioLogin" type="text" name="usuario" placeholder="Escribe tu usuario" required>
+
+                <label for="passwordLogin">Contraseña:</label>
+                <input id="passwordLogin" type="password" name="password" placeholder="Escribe tu contraseña" required>
+
+                <div style="margin-top: 15px;">
+                    <input type="submit" value="Iniciar sesión">
+                    <input type="reset" value="Limpiar">
+                </div>
+            </fieldset>
+        </form>
+    </main>
+</body>
+</html>

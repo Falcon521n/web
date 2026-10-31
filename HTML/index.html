@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>YairFalcon - Inicio</title>
+    <link rel="stylesheet" href="style.css">  
+    <script src="script.js" defer></script>     
+</head>
+<body>
+<header>
+    <h1>Bienvenido a mi sitio web</h1>
+    <nav>
+        <a href="index.html">Inicio</a> |
+        <a href="Autobiografia.html">Autobiografía</a> |
+        <a href="Galeria.html">Galería</a> |
+        <a href="Contacto.html">Contacto</a> |
+        <a href="#crud">CRUD de usuarios</a>
+    </nav>
+</header>
+
+<main>
+    <!-- Presentación -->
+    <section>
+        <h2>Presentación</h2>
+        <p><strong>Hola</strong>, soy <em>Yair Alexander Falcon Kuyoc</em>. Aquí encontrarás mi biografía, mis deportes favoritos y mi trabajo.</p>
+        <figure style="text-align:center;">
+            <img src="Imagen/foto1.png" alt="Foto principal" width="300">
+            <figcaption>Mi foto principal</figcaption>
+        </figure>
+    </section>
+
+    <section id="crud">
+        <h2>CRUD de usuarios</h2>
+        <p>Selecciona una operación. Cada opción abre su formulario correspondiente.</p>
+
+        <div class="crud-grid">
+            <article class="crud-card">
+                <h3>Registrar usuario</h3>
+                <p>Crea una cuenta nueva.</p>
+                <a class="crud-link" href="Registro.html">Ir a registro</a>
+            </article>
+
+            <article class="crud-card">
+                <h3>Iniciar sesión</h3>
+                <p>Accede con tu cuenta registrada.</p>
+                <a class="crud-link" href="Login.html">Ir a inicio de sesión</a>
+            </article>
+
+            <article class="crud-card">
+                <h3>Modificar usuario</h3>
+                <p>Actualiza el correo o la contraseña de un usuario.</p>
+                <a class="crud-link" href="Editar.html">Ir a modificar</a>
+            </article>
+
+            <article class="crud-card">
+                <h3>Eliminar usuario</h3>
+                <p>Elimina una cuenta existente.</p>
+                <a class="crud-link" href="Eliminar.html">Ir a eliminar</a>
+            </article>
+        </div>
+    </section>
+
+    <!-- Fecha y hora -->
+    <section>
+        <h2>Fecha y hora actual</h2>
+        <p id="fechaHora"></p>
+    </section>
+
+    <!-- Convertidor -->
+    <section>
+        <h2>Convertidor a pesos</h2>
+        <form onsubmit="event.preventDefault(); convertirAPesos();">
+            <label for="usd">Cantidad en USD:</label>
+            <input type="number" id="usd" placeholder="Ejemplo: 10">
+            <button type="submit">Convertir</button>
+        </form>
+        <p id="resultadoPesos"></p>
+    </section>
+
+    <!-- Calculadora -->
+    <section>
+        <h2>Calculadora</h2>
+        <form onsubmit="event.preventDefault(); calcular();">
+            <label for="num1">Número 1:</label>
+            <input type="number" id="num1">
+            <label for="num2">Número 2:</label>
+            <input type="number" id="num2">
+            <label for="operacion">Operación:</label>
+            <select id="operacion">
+                <option value="+">+</option>
+                <option value="-">-</option>
+                <option value="*">*</option>
+                <option value="/">/</option>
+            </select>
+            <button type="submit">Calcular</button>
+        </form>
+        <p id="resultadoCalc"></p>
+    </section>
+
+    <!-- Cuestionario -->
+    <section>
+        <h2>Cuestionario interactivo</h2>
+        <form onsubmit="event.preventDefault(); verificarCuestionario();">
+            <p>¿Cuál es el lenguaje de marcado para la web?</p>
+            <label><input type="radio" name="pregunta1" value="HTML"> HTML</label><br>
+            <label><input type="radio" name="pregunta1" value="CSS"> CSS</label><br>
+            <label><input type="radio" name="pregunta1" value="JavaScript"> JavaScript</label><br>
+            <button type="submit">Verificar</button>
+        </form>
+    </section>
+</main>
+
+<footer>
+    <p>© 2026 YairFalcon</p>
+</footer>
+</body>
+</html>

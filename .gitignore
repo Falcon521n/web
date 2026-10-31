@@ -1,0 +1,11 @@
+# Database credentials and local environment configuration
+PHP/db_config.local.php
+.env
+.env.*
+
+# Local/editor and runtime files
+.vscode/
+*.log
+*.tmp
+Thumbs.db
+Desktop.ini
